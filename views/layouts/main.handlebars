@@ -4,27 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fund My Project!</title>
+  <title>JAM routines</title>
   <link rel="stylesheet" href="/css/materialize.css">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/materialize.min.css">
+  <link rel="icon" href="./assets/JAM_LOGO_CLEAR.png">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
-        {{!-- <span role="img" aria-label="money"></span> --}}
-        <a href="/"><img src="./assets/JAM_LOGO_CLEAR.png" alt="JAM image logo"></a>
-        {{!-- <a href="/">JAM Routines!</a> --}}
       </h1>
       <nav>
+     
+        <a href="/" style="display: inline-block;">
+          <img src="./assets/JAM_LOGO_CLEAR.png" alt="JAM Logo" style="vertical-align: middle; width: 150px; height: auto;">
+        </a>
+        <a href="/create">CREATE</a>
+        <a href="/explore">EXPLORE</a>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/profile">profile</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login">JOIN</a>
         {{/if}}
       </nav>
     </header>
