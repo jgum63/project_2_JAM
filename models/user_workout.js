@@ -16,17 +16,17 @@ User_Workout.init
         autoIncrement: true,
      },
         
-    // user_id:
-    //  {
-    //     type: DataTypes.STRING,
-    //     allowNull: false,
-    // },
+    user_id:
+     {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
 
-    // workout_id:
-    // {
-    //     type: DataTypes.STRING,
-    //     allowNull: false,
-    //     },
+    workout_id:
+    {
+        type: DataTypes.STRING,
+        allowNull: false,
+        },
 
     workout_date:
     {

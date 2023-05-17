@@ -1,17 +1,20 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
+    "name": "Joshua",
+    "username": "JG",
+    "email": "joshua@JAMroutines.com",
     "password": "password12345"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
+    "name": "Axel",
+    "username": "AE",
+    "email": "axel@JAMroutines.com",
     "password": "password12345"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
+    "name": "Mohammad",
+    "username": "MA",
+    "email": "mohammad@JAMroutines.com",
     "password": "password12345"
   }
 ]
