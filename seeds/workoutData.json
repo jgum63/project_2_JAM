@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Push Up",
+    "sets": 5,
+    "reps": 20,
+    "user_id": 2,
+    "difficulty_id": "**"
+  },
+  {
+    "name": "Pull Up",
+    "sets": 5,
+    "reps": 20,
+    "user_id": 2,
+    "difficulty_id": "**"
+  },
+  {
+    "name": "Sit Up",
+    "sets": 5,
+    "reps": 20,
+    "user_id": 3,
+    "difficulty_id": "**"
+  }
+]
