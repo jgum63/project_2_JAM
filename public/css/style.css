@@ -11,6 +11,44 @@ nav .brand-logo {
   color: #444;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right a {
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.image-overlay {
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -10%);
+  text-align:start;
+  color: white;
+  font-weight: bold;
+}
+
+.background-image {
+  background-image: url("/public/assets/Pushups.jpg");
+  background-size: cover;
+  /* Add any additional background properties here if needed */
+}
+
 p {
   line-height: 2rem;
 }

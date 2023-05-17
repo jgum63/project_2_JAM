@@ -79,4 +79,14 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+//explore workouts page
+router.get('/explore', (req, res) => {
+  res.render('explore');
+});
+
+//create workouts page
+router.get('/create', (req, res) => {
+  res.render('create');
+});
+
 module.exports = router;
