@@ -25,13 +25,25 @@ Workout.init
         type: DataTypes.INTEGER,
         allowNull: false,
       },
+      
       reps: 
       {
         type: DataTypes.INTEGER,
         allowNull: false,
       },
 
+      difficulty_id:
+      {
+          type:DataTypes.INTEGER,
+          references:{
+              model:"difficulty",
+              key:"id"
+          }
+  
+  
+      }
     },
+    
     {
       sequelize,
       timestamps: false,

@@ -11,15 +11,17 @@ Difficulty.init
     {
         type: DataTypes.INTEGER,
         allowNull: false, 
+        autoIncrement: true,
         primaryKey: true,
-        autoIncrement: true
     },
-                
+    
     difficulty:
     {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
     }
+
+   
  },
             
 {

@@ -1,23 +1,65 @@
 [
   {
-    "name": "Push Up",
-    "sets": 5,
-    "reps": 20,
+    "name": "Bench Press",
+    "sets": 4,
+    "reps": 12,
     "user_id": 2,
-    "difficulty_id": "**"
+    "difficulty_id": 1
   },
   {
-    "name": "Pull Up",
-    "sets": 5,
-    "reps": 20,
+    "name": "Incline Press",
+    "sets": 4,
+    "reps": 12,
     "user_id": 2,
-    "difficulty_id": "**"
+    "difficulty_id": 3
   },
   {
-    "name": "Sit Up",
-    "sets": 5,
-    "reps": 20,
-    "user_id": 3,
-    "difficulty_id": "**"
+    "name": "Decline Press",
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Overhead Press",
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Dumbbell Shoulder Press",
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Lateral Raise",
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Skull Crushers",
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Pull Downs",
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Dips",
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
   }
 ]
