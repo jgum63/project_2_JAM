@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAM routines</title>
   <link rel="stylesheet" href="/css/materialize.css">
+  {{!-- <link rel="stylesheet" href="/css/materialize.min.css"> --}}
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 </head>
@@ -26,10 +27,10 @@
         <a href="/explore">EXPLORE</a>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile">PROFILE</a> |
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">JOIN</a>
+        <a href="/login">login</a>
         {{/if}}
         </div>
       </nav>

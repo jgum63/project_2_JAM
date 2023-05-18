@@ -11,7 +11,9 @@ Workout.belongsToMany(User, {
   through: User_Workout
 });
 
-Difficulty.hasOne(Workout,{});
+Difficulty.hasOne(Workout);
+Workout.belongsTo(Difficulty)
+
 
 User_Workout.hasOne(User, {});
 

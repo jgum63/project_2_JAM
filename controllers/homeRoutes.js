@@ -1,14 +1,12 @@
 const router = require('express').Router();
-const { Project, User } = require('../models');
+const { Workout, Difficulty } = require('../models');
+const { User_Workout, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-
-
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -16,9 +14,36 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/explore', withAuth, async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const workoutData = await Workout.findAll({
+      include: [
+        {
+          model: Difficulty
+        },
+      ],
+    });
+
+    // Serialize data so the template can read it
+    const workouts = workoutData.map((workouts) => workouts.get({ plain: true }));
+    console.log(workouts)
+    console.log("hello world")
+    // Pass serialized data and session flag into template
+    res.render('explore', { 
+      workouts, 
+      logged_in: req.session.logged_in 
+    });
+  } catch (err) {
+
+    console.log(err)
+   res.status(500).json(err.message);
+  }
+});
+
 router.get('/project/:id', async (req, res) => {
   try {
-    const projectData = await Project.findByPk(req.params.id, {
+    const projectData = await Workout.findByPk(req.params.id, {
       include: [
         {
           model: User,
@@ -29,7 +54,7 @@ router.get('/project/:id', async (req, res) => {
 
     const project = projectData.get({ plain: true });
 
-    res.render('project', {
+    res.render('create', {
       ...project,
       logged_in: req.session.logged_in
     });
@@ -44,7 +69,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      // include: [{ model: Project }],
     });
     console.log(userData)
     const user = userData.get({ plain: true });
@@ -54,7 +79,8 @@ console.log(user)
       logged_in: true
     });
   } catch (err) {
-    res.status(500).json(err);
+    console.log(err)
+    res.status(500).json({message: err.message});
   }
 });
 
@@ -66,11 +92,6 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
-});
-
-//explore workouts page
-router.get('/explore', (req, res) => {
-  res.render('explore');
 });
 
 //create workouts page

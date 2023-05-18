@@ -25,12 +25,13 @@
       <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
       needed!
     </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+    <p>Created by {{workout.user.name}}</p>
   </div>
   <div class="col-md-7">
     <p>
-      {{project.description}}
+      {{workout.description}}
     </p>
+    <span><img src="/public/assets/JAM_homepage.jpg" alt="Man exercising"></span>
   </div>
 </div>
 {{/each}} --}}
