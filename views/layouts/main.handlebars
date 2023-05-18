@@ -8,22 +8,21 @@
   <link rel="stylesheet" href="/css/materialize.css">
   {{!-- <link rel="stylesheet" href="/css/materialize.min.css"> --}}
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="icon" href="./assets/JAM_LOGO_CLEAR.png">
+  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        {{!-- <span role="img" aria-label="money"></span> --}}
-        {{!-- <a href="/"><img src="./assets/JAM_LOGO_CLEAR.png" alt="JAM image logo"></a> --}}
-        {{!-- <a href="/">JAM Routines!</a> --}}
-      </h1>
+
       <nav>
      
+        <div class="nav-left">
         <a href="/" style="display: inline-block;">
           <img src="/assets/JAM_LOGO_CLEAR.png" alt="JAM Logo" style="vertical-align: middle; width: 150px; height: auto;">
         </a>
+        </div>
+        <div class="nav-right">
         <a href="/create">CREATE</a>
         <a href="/explore">EXPLORE</a>
         <!-- Conditionally render login or logout links -->
@@ -33,6 +32,7 @@
         {{else}}
         <a href="/login">login</a>
         {{/if}}
+        </div>
       </nav>
     </header>
     <main class="container container-fluid mt-5">
@@ -48,6 +48,7 @@
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
+  <script src="/js/test.js"></script>
 </body>
 
 </html>
