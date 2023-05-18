@@ -4474,7 +4474,7 @@ nav .input-field label.active i {
     min-height: 64px;
   }
   nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
-    height: 64px;
+    height: 100px;
     line-height: 64px;
   }
   .navbar-fixed {
@@ -4521,9 +4521,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 5.2rem;
   line-height: 110%;
   margin: 2.8rem 0 1.68rem 0;
+  font-weight: bold;
 }
 
 h2 {
