@@ -20,8 +20,7 @@ router.get('/explore', withAuth, async (req, res) => {
     const workoutData = await Workout.findAll({
       include: [
         {
-          model: Difficulty,
-          attributes: ['difficulty'],
+          model: Difficulty
         },
       ],
     });
@@ -29,13 +28,16 @@ router.get('/explore', withAuth, async (req, res) => {
     // Serialize data so the template can read it
     const workouts = workoutData.map((workouts) => workouts.get({ plain: true }));
     console.log(workouts)
+    console.log("hello world")
     // Pass serialized data and session flag into template
     res.render('explore', { 
       workouts, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
-    res.status(500).json(err);
+
+    console.log(err)
+   res.status(500).json(err.message);
   }
 });
 
@@ -90,11 +92,6 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
-});
-
-//explore workouts page
-router.get('/explore', (req, res) => {
-  res.render('explore');
 });
 
 //create workouts page
