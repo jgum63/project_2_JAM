@@ -1,6 +1,39 @@
 [
   {
+    "name": "Push-Ups",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Chest Press",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
     "name": "Bench Press",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Dumbbell Bench Press",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Incline Chest Press",
+    "day": 1,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
@@ -8,20 +41,55 @@
   },
   {
     "name": "Incline Press",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "day": 1,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
     "difficulty_id": 3
+  },
+  {
+    "name": "Decline Chest Press",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
   },
   {
     "name": "Decline Press",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Decline Dumbbell Press",
+    "day": 1,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
     "difficulty_id": 3
   },
   {
+    "name": "Lateral Raise",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
     "name": "Overhead Press",
+    "day": 1,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
@@ -29,13 +97,23 @@
   },
   {
     "name": "Dumbbell Shoulder Press",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Pull Downs",
+    "day": 1,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
     "difficulty_id": 2
   },
   {
-    "name": "Lateral Raise",
+    "name": "Dips",
+    "day": 1,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
@@ -43,23 +121,178 @@
   },
   {
     "name": "Skull Crushers",
+    "day": 1,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Kettle Ball Deadlift",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Hyperextension",
+    "day": 2,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
     "difficulty_id": 2
   },
   {
-    "name": "Pull Downs",
+    "name": "Deadlift",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Cable Rows",
+    "day": 2,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
     "difficulty_id": 1
   },
   {
-    "name": "Dips",
+    "name": "Barbell Row",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "T-Bar Row",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Lat Pulldown",
+    "day": 2,
     "sets": 4,
     "reps": 12,
     "user_id": 2,
     "difficulty_id": 1
+  },
+  {
+    "name": "Pull-Ups",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Dumbbell Pullovers",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Barbell Curl",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Hammer Curl",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Dumbbell Curl",
+    "day": 2,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Romanian Deadlift",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Squat",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Front Squat",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 3
+  },
+  {
+    "name": "Leg Extension",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Leg Press",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Leg Curl",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Calf Raises",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 1
+  },
+  {
+    "name": "Hip Thrust",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
+  },
+  {
+    "name": "Bulgarian Split Squat",
+    "day": 3,
+    "sets": 4,
+    "reps": 12,
+    "user_id": 2,
+    "difficulty_id": 2
   }
 ]
