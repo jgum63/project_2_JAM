@@ -5,6 +5,30 @@
  *
  * Made By MaterializeCSS.com
  */
+ .display-flex {
+  display: flex;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.p-2 {
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+}
+
+nav {
+  width: 100%; 
+}
+
 
 nav ul a,
 nav .brand-logo {
@@ -26,6 +50,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
+  font-size: 25px;
 }
 
 .nav-right a {
@@ -37,16 +62,15 @@ nav {
   position:relative;
   top: 50%;
   left: 50%;
-  transform: translate(-65%, -10%);
+  transform: translate(-65%, 10%);
   text-align:start;
   color: white;
   font-weight: bold;
 }
 
 .background-image {
-  background-image: url("/public/assets/Pushups.jpg");
+  background-image: url("/public/assets/Pushups2.jpg");
   background-size: cover;
-  /* Add any additional background properties here if needed */
 }
 
 p {
