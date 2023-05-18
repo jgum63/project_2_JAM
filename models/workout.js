@@ -31,11 +31,15 @@ Workout.init
         type: DataTypes.INTEGER,
         allowNull: false,
       },
-
-      difficulty_id:
+      day:
+      {
+        type: DataTypes.INTEGER
+      },
+        difficulty_id:
       {
           type:DataTypes.INTEGER,
-          references:{
+          references:
+          {
               model:"difficulty",
               key:"id"
           }
