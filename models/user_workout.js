@@ -8,7 +8,7 @@ class User_Workout extends Model { }
 User_Workout.init
 (
  {
-    workouts: 
+    id: 
      {
         type: DataTypes.INTEGER,
         allowNull: false, 
@@ -20,19 +20,21 @@ User_Workout.init
      {
         type: DataTypes.STRING,
         allowNull: false,
+        references: {
+            model: 'user',
+            key: 'id'
+        }
     },
 
     workout_id:
     {
         type: DataTypes.STRING,
         allowNull: false,
+        references: {
+            model: 'workout',
+            key: 'id'
+        }
         },
-
-    workout_date:
-    {
-        type: DataTypes.DATE,
-        allowNull: false
-    }
    
 },
 
