@@ -15,6 +15,7 @@ Difficulty.hasOne(Workout);
 Workout.belongsTo(Difficulty)
 
 
-User_Workout.hasOne(User, {});
+User_Workout.belongsTo(User, {through: User_Workout});
+User_Workout.belongsTo(Workout,{through: User_Workout})
 
 module.exports = { User, Workout, Difficulty, User_Workout };

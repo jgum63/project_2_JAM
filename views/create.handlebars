@@ -1,42 +1,36 @@
 <div class="row">
   <div class="col-auto">
-    <h2>Welcome, {{name}}!</h2>
+    <h2>Create a New Routine:</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Workout:</h3>
+    {{!-- <h3>Create a New Routine:</h3> --}}
 
     <form class="form new-project-form">
       <div class="form-group">
-        <label for="project-name">Workout name:</label>
-        <input class="form-input" type="text" id="project-name" name="project-name" />
+        <label for="project-name">Name of Exercise</label>
+        <input class="form-input" type="text" id="routine-name" name="routine-name" />
       </div>
       <div class="form-group">
-        <label for="project-funding">Exercise 1:</label>
-        <input class="form-input" id="project-funding" name="project-funding" />
+        <label for="project-desc">Sets:</label>
+        <input class="form-input" type="number" id="sets" name="sets" />
       </div>
-      <div class="form-group">
-        <label for="project-funding">Exercise 2:</label>
-        <input class="form-input" id="project-funding" name="project-funding" />
+       <div class="form-group">
+        <label for="project-desc">Reps:</label>
+        <input class="form-input" type="number" id="reps" name="reps" />
       </div>
-      <div class="form-group">
-        <label for="project-funding">Exercise 3:</label>
-        <input class="form-input" id="project-funding" name="project-funding" />
+      <p>Select Day 1, 2, or 3!</p>
+       <div class="form-group">
+        <label for="project-desc">Day:</label>
+        <input class="form-input" type="number" id="day" name="day" />
       </div>
-      <div class="form-group">
-        <label for="project-funding">Exercise 4:</label>
-        <input class="form-input" id="project-funding" name="project-funding" />
+      <p>1 = Beginner || 2 = Intermediate || 3 = Advanced</p>
+       <div class="form-group">
+        <label for="project-desc">Difficulty:</label>
+        <input class="form-input" type="number" id="difficulty" name="difficulty" />
       </div>
-      <div class="form-group">
-        <label for="project-funding">Exercise 5:</label>
-        <input class="form-input" id="project-funding" name="project-funding" />
-      </div>
-      {{!-- <div class="form-group">
-        <label for="project-desc">Exercise 2:</label>
-        <textarea class="form-input" id="project-desc" name="project-desc"></textarea>
-      </div> --}}
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
       </div>
@@ -61,4 +55,4 @@
   {{/if}}
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="./js/create.js"></script>

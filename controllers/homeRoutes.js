@@ -40,48 +40,55 @@ router.get('/explore', withAuth, async (req, res) => {
    res.status(500).json(err.message);
   }
 });
+// this would be for a singular workout
+// router.get('/project/:id', async (req, res) => {
+//   try {
+//     const projectData = await Workout.findByPk(req.params.id, {
+//       include: [
+//         {
+//           model: User,
+//           attributes: ['name'],
+//         },
+//       ],
+//     });
 
-router.get('/project/:id', async (req, res) => {
-  try {
-    const projectData = await Workout.findByPk(req.params.id, {
-      include: [
-        {
-          model: User,
-          attributes: ['name'],
-        },
-      ],
-    });
+//     const project = projectData.get({ plain: true });
 
-    const project = projectData.get({ plain: true });
-
-    res.render('create', {
-      ...project,
-      logged_in: req.session.logged_in
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+//     res.render('create', {
+//       ...project,
+//       logged_in: req.session.logged_in
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
-  try {
-    // Find the logged in user based on the session ID
-    const userData = await User.findByPk(req.session.user_id, {
-      attributes: { exclude: ['password'] },
-      // include: [{ model: Project }],
-    });
-    console.log(userData)
-    const user = userData.get({ plain: true });
-console.log(user)
-    res.render('profile', {
-      ...user,
-      logged_in: true
-    });
-  } catch (err) {
-    console.log(err)
-    res.status(500).json({message: err.message});
-  }
+  console.log("hit profile route")
+  // console.log(req.session)
+
+    try {
+  const workoutData = await User_Workout.findAll({
+    include: [{
+      model: Workout
+    }],
+    where: {
+      user_id: req.session.user_id,
+  },
+  });
+  // console.log(workoutData)
+    const workouts = workoutData.map((workouts) => workouts.get({ plain: true }));
+  console.log(workouts)
+  res.render('profile', {
+    workouts,
+    logged_in: true
+  });
+} catch (err) {
+
+  console.log(err)
+ res.status(500).json(err.message);
+}
 });
 
 router.get('/login', (req, res) => {

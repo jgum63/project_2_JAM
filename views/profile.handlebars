@@ -6,9 +6,9 @@
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3>Create a New Workout:</h3>
+    <h3>Routines you have created:</h3>
 
-    <form class="form new-project-form">
+    {{!-- <form class="form new-project-form">
       <div class="form-group">
         <label for="project-name">Workout name:</label>
         <input class="form-input" type="text" id="project-name" name="project-name" />
@@ -25,19 +25,22 @@
         <button type="submit" class="btn btn-primary">Create</button>
       </div>
     </form>
-  </div>
+  </div> --}}
 
-  {{#if projects.length}}
+  {{#if workouts.length}}
   <div class="col-md-6 project-list">
     <h3>Current Projects:</h3>
 
-    {{#each projects as |project|}}
+    {{#each workouts as |workout|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/project/{{project.id}}">{{project.name}}</a></h4>
+        <h4><a href="/project/{{workout.name}}">{{workout.workout.name}}</a></h4>
+        <p>Sets: <a href="/project/{{workout.sets}}">{{workout.workout.sets}}</a></p>
+        <p>Reps: <a href="/project/{{workout.sets}}">{{workout.workout.reps}}</a></p>
+        {{!-- <p>Day:<a href="/project/{{workout.sets}}">{{workout.workout.sets}}</a></p> --}}
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{workout.name}}">DELETE</button>
       </div>
     </div>
     {{/each}}
